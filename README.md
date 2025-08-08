@@ -40,7 +40,7 @@ python llama3.2_vote_prediction_htv.py \
   --output_file preds/vote_dev_llama3.2.json
 ```
 
-###2. GPT Models
+### 2. GPT Models
 For GPT models (e.g., gpt-3.5-turbo, gpt-4o), you must provide your OpenAI API key:
 
 ```bash
@@ -52,7 +52,7 @@ python gpt_predict_vote_htv.py \
 ```
 Get an API key here: https://platform.openai.com/account/api-keys
 
-###3. Gemini Models
+### 3. Gemini Models
 For Google Gemini models, set your Gemini API key:
 
 ```bash
