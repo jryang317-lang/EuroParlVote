@@ -1,0 +1,22 @@
+name: llama3
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.2
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.2
+  - pip
+  - pip:
+      - transformers>=4.38
+      - accelerate
+      - sentencepiece
+      - fire
+      - tqdm
+      - bitsandbytes
+      - peft
+      - flash-attn --no-build-isolation  # Optional: remove if it causes build issues
