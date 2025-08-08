@@ -21,6 +21,7 @@ conda env create -f environment.yml
 
 # Activate the environment
 conda activate europarlvote
+```
 
 ## 🚀 Run Guide
 
@@ -37,6 +38,7 @@ python llama3.2_vote_prediction_htv.py \
   --model_path /path/to/LLaMA/model \
   --input_file data/dev_set.csv \
   --output_file preds/vote_dev_llama3.2.json
+```
 
 ###2. GPT Models
 For GPT models (e.g., gpt-3.5-turbo, gpt-4o), you must provide your OpenAI API key:
@@ -47,6 +49,7 @@ python gpt_predict_vote_htv.py \
   --model gpt-4o \
   --input_file data/dev_set.csv \
   --output_file preds/vote_dev_gpt4o.json
+```
 Get an API key here: https://platform.openai.com/account/api-keys
 
 ###3. Gemini Models
@@ -58,4 +61,5 @@ python gemini_vote_prediction_htv.py \
   --model gemini-pro \
   --input_file data/dev_set.csv \
   --output_file preds/vote_dev_gemini.json
+```
 Get an API key here: https://aistudio.google.com/app/apikey
